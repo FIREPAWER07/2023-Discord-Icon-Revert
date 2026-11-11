@@ -1,11 +1,3 @@
-/**
-* @name 2023 Discord Icon Revert
-* @author @FIREPAWER07
-* @version 1.0
-* @description Reverts the Icon change that happend during 2023/2024.
-* @source https://github.com/FIREPAWER07/2023-Discord-Icon-Revert
-*/
-
 svg {
     background-size: 100% !important;
 }
@@ -1056,13 +1048,13 @@ svg:has([d^="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-
 }
 
 /*Lottie*/
-.lottieIcon_69Onuk svg {
+.lottieIcon_69Onuk:where(:not([class*="orbsLottie"])) svg {
   background: currentColor;
 }
 .button_Y-8oZW .lottieIcon_69Onuk[style^="--__lottieIconColor: v"] > svg, .redGlow_K9Xq13 .lottieIcon_69Onuk svg {
   background: linear-gradient(-45deg, currentColor 12px, var(--status-danger) 0, var(--status-danger) 15px, currentColor 0);
 }
-.lottieIcon_69Onuk svg * {
+.lottieIcon_69Onuk:where(:not([class*="orbsLottie"])) svg * {
   display: none;
 }
 
